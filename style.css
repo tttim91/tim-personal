@@ -1,10 +1,14 @@
+:root {
+    font-size: 1vw;
+}
+
 body {
     background-color: #D0D0D0;
     margin-bottom: 0;
 }
 
 nav {
-    width: 99.1vw;
+    width: 100rem;
     background-color: #2F2C2C;
     height: 7%;
     top: 0;
@@ -12,18 +16,37 @@ nav {
     position: fixed;
     display: flex;
     justify-content: center;
+    align-items: center;
     z-index: 2;
+}
+
+.logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 5rem;
+    width: 5rem;
+    background-color: #2F2C2C;
+    color: #D9593D;
+    font-size: 5rem;
+    right: 2rem;
+    top: 1rem;
+    font-family: "Poiret One";
 }
 
 h1 {
     color: #E5F8FF;
     margin-right: 2%;
     font-family: "Fjalla One";
+    font-size: 2rem;
 }
 
 h2 {
     color: #D9593D;
     font-family: "Fjalla One";
+    font-size: 2rem;
 }
 
 .container {
@@ -32,14 +55,13 @@ h2 {
     justify-content: space-between;
     position: relative;
     top: 15vh;
-    left: 15%;
     width: 70vw;
     height: 100vh;
 }
 
 .project {
-    width: 30%;
-    height: 40%;
+    width: 18rem;
+    height: 18rem;
     border-radius: 100%;
     border: 8px solid #B9B9B9;
     transition: border .25s ease-in-out;
@@ -84,37 +106,97 @@ h2 {
 .details {
     opacity: 0;
     transition: opacity .25s ease-in-out;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
+    width: 18rem;
+    height: 18rem;
     background-color: #B9B9B9;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    border-radius: 50%;
 }
 
-a {
-    padding: 5%;
+.details a {
+    padding: 0.5rem;
     background-color: black;
     color: white;
     font-size: 2rem;
     text-decoration: none;
     opacity: 1;
-    border-radius: 2rem;
+    border-radius: 30%;
 }
 
 .details:hover {
-    opacity: 0.6;
+    opacity: 1;
+    background-color: hsla(0,0%,50%,0.4);
 }
 
+.aboutme {
+    position: absolute;
+    left: 10%;
+    color: white;
+    width: 50%;
+}
+
+.aboutme h3 {
+    position: relative;
+    bottom: 0.9rem;
+    font-size: 2rem;
+    color: #D9593D;
+}
+
+.aboutme p {
+    position: relative;
+    bottom: 0.5rem;
+    font-size: 1rem;
+    color: #E5F8FF;
+    font-family: 'Lato';
+}
+
+.linkedin {
+    position: absolute;
+    top: 1rem;
+    right: 10rem;
+    height: 5rem;
+    width: 5rem;
+}
+
+.github {
+    position: absolute;
+    top: 1rem;
+    right: 20rem;
+    height: 5rem;
+    width: 5rem;
+}
+
+.contact{
+    position: relative;
+    left: 73.8rem;
+    top: 8rem;
+    /*top: 20rem;
+    right: 20rem;
+    width: 50rem;*/
+    color: white;
+    width: 10rem;
+}
+
+.contact h4 {
+    font-size: 1.5rem;
+    color: #D9593D;
+    width: 10rem;
+}
+
+.contact p {
+    font-size: 1rem;
+    color: #E5F8FF;
+    width: 20rem;
+    font-family: 'Lato';
+}
 
 footer {
     position: relative;
-    height: 30vh;
-    width: 100.7vw;
+    height: 15rem;
+    width: 99rem;
     background-color: #2F2C2C;
     margin-top: 15vh;
-    left: -2%;
-    bottom: -2%;
 }
