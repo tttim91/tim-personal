@@ -8,6 +8,10 @@
         <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
         <link rel="stylesheet" href="style.css" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -19,50 +23,170 @@
                     <p>TM</p>
                 </div>
                 <h1>TIM MUSGROVE</h1>
-                <h2>FULL STACK WEB DEVELOPER &amp; PETROLEUM ENGINEER</h2>
+                <h2>FULL STACK WEB DEVELOPER</h2>
             </nav>
         </header>
         <main>
             <div class="container">
-                <div class="project" id="coloradott">
-                    <div class="details">
-                        <a target="_blank" href="http://coloradott.com/">Website</a>
-                        <a target="_blank" href="https://github.com/tttim91/ColoradoTT">Github</a>
-                        <a href="#">Details</a>
+                <div>
+                    <div class="project" id="coloradott">
+                        <div class="details">
+                            <a target="_blank" href="http://coloradott.com/">Website</a>
+                            <a target="_blank" href="https://github.com/tttim91/ColoradoTT">Github</a>
+                            <a data-toggle="modal" data-target="#myModal1">
+                              Details
+                          </a>
+                        </div>
                     </div>
+                    <h4>Coloradott</h4>
+                </div>
+                <div class="">
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Coloradott</h4>
+                      </div>
+                      <div class="modal-body">
+                        <img src="coloradott.png" />
+                        <p>
+                            Provides all information about table tennis in Colorado - built using HTML, CSS, jQuery
+                        </p>
+                        <p>
+                            URL - <a href="http://coloradott.com">Coloradott.com</a>
+                        </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+
+                    <div class="project" id="dodenver">
+                        <div class="details">
+                            <a target="_blank" href="http://do-denver.herokuapp.com/">Website</a>
+                            <a target="_blank" href="https://github.com/g25-a-team/do-denver">Github</a>
+                            <a data-toggle="modal" data-target="#myModal2">
+                              Details
+                          </a>
+                        </div>
+                    </div>
+                    <h4>Do Denver</h4>
                 </div>
                 <div class="">
 
                 </div>
-                <div class="project" id="dodenver">
-                    <div class="details">
-                        <a target="_blank" href="http://do-denver.herokuapp.com/">Website</a>
-                        <a target="_blank" href="https://github.com/g25-a-team/do-denver">Github</a>
-                        <a href="#">Details</a>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Do Denver</h4>
+                      </div>
+                      <div class="modal-body">
+                          <img id="dodenverDetailImage" src="dodenver.png" />
+                          <p>
+                              App to plan how you will interact with Denver built using Javascript, Express and Google Maps/Places API
+                          </p>
+                          <p>
+                              URL - <a href="http://do-denver.herokuapp.com/">do-denver.herokuapp.com</a>
+                          </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
                     </div>
+                  </div>
+                </div>
+                <div>
+
+                    <div class="project" id="usatt">
+                        <div class="details">
+                            <a target="_blank" href="https://usattmatchheadtohead.firebaseapp.com/">Website</a>
+                            <a target="_blank" href="https://github.com/tttim91/USATTMatches">Github</a>
+                            <a data-toggle="modal" data-target="#myModal3">
+                              Details
+                          </a>
+                        </div>
+                    </div>
+                    <h4>USATT Match Analyzer</h4>
                 </div>
                 <div class="">
 
                 </div>
-                <div class="project" id="usatt">
-                    <div class="details">
-                        <a target="_blank" href="https://usattmatchheadtohead.firebaseapp.com/">Website</a>
-                        <a target="_blank" href="https://github.com/tttim91/USATTMatches">Github</a>
-                        <a href="#">Details</a>
+                <!-- Modal -->
+                <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">USATT Match Analyzer</h4>
+                      </div>
+                      <div class="modal-body">
+                          <img id="usattDetailImage" src="usatt.png" />
+                          <p>
+                              Javascript and Express.js based table tennis tournament match analyzer web app
+                          </p>
+                          <p>
+                              URL - <a href="https://usattmatchheadtohead.firebaseapp.com/">usattmatchheadtohead.firebaseapp.com</a>
+                          </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <div class="">
+                <div>
 
-                </div>
-                <div class="project">
-                    <div class="details">
-
+                    <div class="project" id="learn">
+                        <div class="details">
+                            <a target="_blank" href="https://letslearn.firebaseapp.com">Website</a>
+                            <a target="_blank" href="https://github.com/FlashApps/FlashCards">Github</a>
+                            <a data-toggle="modal" data-target="#myModal4">
+                              Details
+                          </a>
+                        </div>
                     </div>
+                    <h4>Let's Learn</h4>
                 </div>
-                <div class="project">
-                    <div class="details">
-
+                <!-- Modal -->
+                <div class="modal fade" id="myModal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel">Let's Learn</h4>
+                      </div>
+                      <div class="modal-body">
+                          <img id="learnDetailImage" src="learn.png" />
+                          <p>
+                              Angular2 based simple flashcard application using quizlet API for studying
+                          </p>
+                          <p>
+                              URL - <a href="http://letslearn.firebaseapp.com">letslearn.firebaseapp.com</a>
+                          </p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
                     </div>
+                  </div>
+                </div>
+                <div>
+
+                    <div class="project" id="resume">
+                        <div class="details">
+                            <a target="_blank" href="./Resume.pdf">PDF</a>
+                        </div>
+                    </div>
+                    <h4>Resume</h4>
                 </div>
                 <div class="project">
                     <div class="details">
@@ -88,6 +212,10 @@
         </footer>
 
         <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
       <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="./app.js"></script>
     </body>
 </html>
