@@ -2,13 +2,21 @@
     font-size: 1vw;
 }
 
-body {
+html, body {
     background-color: #D0D0D0;
-    margin-bottom: 0;
+    height:100%;
+}
+
+.largeContainer {
+    min-height: 100%;
+}
+
+main {
+    width: 100%;
 }
 
 nav {
-    width: 100rem;
+    width: 100%;
     background-color: #2F2C2C;
     height: 7%;
     top: 0;
@@ -26,11 +34,11 @@ nav {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    height: 5rem;
+    height: 7vh;
     width: 5rem;
     background-color: #2F2C2C;
     color: #D9593D;
-    font-size: 5rem;
+    font-size: 3em;
     right: 2rem;
     top: 1rem;
     font-family: "Poiret One";
@@ -38,30 +46,32 @@ nav {
 
 h1 {
     color: #E5F8FF;
-    margin-right: 2%;
+    margin-left: 5rem;
+    margin-right: 5rem;
     font-family: "Fjalla One";
-    font-size: 2rem;
+    font-size: 1.5em;
 }
 
 h2 {
     color: #D9593D;
     font-family: "Fjalla One";
-    font-size: 2rem;
+    font-size: 1.5em;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
     position: relative;
     top: 15vh;
     width: 65vw;
     height: 100vh;
 }
 
+.col-xs-12 {
+    margin-bottom: 5rem;
+}
+
 .project {
-    width: 18rem;
-    height: 18rem;
+    width: 14em;
+    height: 14em;
     border-radius: 100%;
     border: 8px solid #B9B9B9;
     transition: border .25s ease-in-out;
@@ -70,10 +80,6 @@ h2 {
     align-items: center;
     box-shadow: 0.25rem 0.25rem 0.25rem hsla(0, 0%, 30%, 1);
     margin-right: 2vw;
-}
-
-.project:after {
-    height:
 }
 
 .project:hover {
@@ -147,47 +153,24 @@ h2 {
     background-color: hsla(0,0%,50%,0.4);
 }
 
-.aboutme {
-    position: absolute;
-    left: 10%;
-    color: white;
-    width: 50%;
-}
-
-.aboutme h3 {
-    position: relative;
-    bottom: 0.9rem;
-    font-size: 2rem;
-    color: #D9593D;
-}
-
-.aboutme p {
-    position: relative;
-    bottom: 0.5rem;
-    font-size: 1rem;
-    color: #E5F8FF;
-    font-family: 'Lato';
+.about {
+    height: 10vh;
+    width: 10vh;
 }
 
 .linkedin {
-    position: absolute;
-    top: 1rem;
-    right: 11.5rem;
-    height: 5rem;
-    width: 5rem;
+    height: 10vh;
+    width: 10vh;
 }
 
 .github {
-    position: absolute;
-    top: 1rem;
-    right: 21rem;
-    height: 5rem;
-    width: 5rem;
+    height: 10vh;
+    width: 10vh;
 }
 
 .contact{
     position: relative;
-    left: 73.8rem;
+    left: 73.8%;
     top: 8rem;
     /*top: 20rem;
     right: 20rem;
@@ -196,7 +179,7 @@ h2 {
     width: 10rem;
 }
 
-.contact h4 {
+.contact h5 {
     font-size: 1.5rem;
     color: #D9593D;
     width: 10rem;
@@ -211,18 +194,29 @@ h2 {
 
 footer {
     position: relative;
-    height: 15rem;
-    width: 100rem;
+    display: flex;
+    position: relative;
+    height: 10vh;
+    width: 100%;
     background-color: #2F2C2C;
-    margin-top: 15vh;
+}
+
+footer a {
+    text-align: center;
+    width: 33%;
+    border-left: 2px solid black;
+}
+
+footer a:hover {
+    background-color: #6D6B6B;
 }
 
 h4 {
-    text-align: center;
-    font-size: 2rem;
+    width: 10em;
+    font-size: 1.5em;
     color: #D9593D;
     position: relative;
-    right: 4%;
+    text-align: center;
     font-family: "Fjalla One";
 }
 
@@ -253,12 +247,34 @@ a:hover {
     margin-bottom: 1.1rem;
 }
 
+#coloradoDetailImage {
+    position: relative;
+    left: 20%;
+    height: 6%;
+    width: 50%;
+    margin-bottom: 1.1rem;
+}
+
+.meImage {
+    width: 20rem;
+    height: 20rem;
+    margin-bottom: 2rem;
+}
+
 .projectTitle {
     position: relative;
     top: 6rem;
     left: 20rem;
     font-size: 5rem;
     width: 20rem;
+}
+
+.aboutEmail {
+    color: #D9593D;
+}
+
+.bottom {
+    margin-bottom: 10rem;
 }
 
 h5 {
